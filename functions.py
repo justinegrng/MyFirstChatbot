@@ -128,9 +128,8 @@ def tf_idf(dir):
     return tf_idf_dict
 
 
-# Fonctionnalités à développer
+# Fonctionnalités avec la méthode TF-IDF
 def non_important_word(tf_idf_dict):
-    # Calcul the most important word
     for file in tf_idf_dict:
         for word in tf_idf_dict[file]:
             if tf_idf_dict[file][word] < 0.5:
