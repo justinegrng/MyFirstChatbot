@@ -154,7 +154,12 @@ def nation_word(tf_idf_dict):
         for word in tf_idf_dict[file]:
             if word == "nation":
                 talked_about[extract_name(file)] = tf_idf_dict[file][word]
-                print(extract_name(file))
+                try:
+                    if int(extract_name(file)[-1]) == 1:
+                        print(extract_name(file)[:-1])
+                except:
+                    print(extract_name(file))
+                    continue
 
     talked_about = sorted(talked_about.items(), key=lambda x: x[1], reverse=True)
     print("Les présidents qui ont le plus parlé de la nation sont : ")
@@ -166,7 +171,7 @@ def ecologie_word(tf_idf_dict):
     talked_about = {}
     for file in tf_idf_dict:
         for word in tf_idf_dict[file]:
-            if "climat" in word or "écologie" in word:
+            if "climat" in word or "écologie" in word or "écologique" in word or "climatique" in word:
                 print(extract_name(file))
                 return
 
