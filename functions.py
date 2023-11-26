@@ -200,6 +200,7 @@ def menu():
         choice = int(input("Que voulez vous faire ?\n"))
         while choice != 2 and choice != 1:
             choice = int(input("Que voulez vous faire ?\n"))
+
         if choice == 1:
             get_all_president_name(list_of_files("cleaned", "txt"))
         if choice == 2:
@@ -217,6 +218,7 @@ def menu():
         choice = int(input("Que voulez vous faire parmi ces 6 fonctionnalités ?\n"))
         while choice != 2 and choice != 1 and choice != 3 and choice != 4 and choice != 5 and choice != 6:
             choice = int(input("Que voulez vous faire ?\n"))
+
         if choice == 1:
             non_important_word(tf_idf("cleaned"))
         elif choice == 2:
