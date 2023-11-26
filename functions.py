@@ -2,6 +2,7 @@ import os
 import math
 
 # Fonctions de base
+
 def print_list(list):
     for element in list:
         print(element)
