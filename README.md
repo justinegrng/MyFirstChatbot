@@ -18,9 +18,6 @@ Si 2 sélectionné (on doit rechoisir un chiffre), on a :
 ↪ 5. Le premier président à parler du climat  
 ↪ 6. Le(s) mot(s) que tous les présidents ont évoqués  
 
-
-
-
 ## Fonctionnalités principales 
 ### Liste des fonctions :
 #### Fonctions de base
