@@ -11,4 +11,3 @@ if __name__ == "__main__":
         else:
             print("Vous êtes sorti ! ;( Relancez le programme.")
             exit(0)
-

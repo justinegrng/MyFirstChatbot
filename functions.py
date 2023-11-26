@@ -184,6 +184,7 @@ def common_words(tf_idf_dict):
             if tf_idf_dict[file][word] > 0.5 and tf_idf_dict[file][word] < 1.0:
                 print(word + " : " + str(tf_idf_dict[file][word]))
 
+
 def menu():
     print("1.Utiliser les fonctions de base.\n2.Utiliser les fonctionnalités avec TF-IDF.")
     user = int(input("Que voulez-vous faire ? Choisissez 1 ou 2.\n"))
