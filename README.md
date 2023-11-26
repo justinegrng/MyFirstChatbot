@@ -9,7 +9,7 @@
 Exécuter le programme ```main.py```, puis accéder au menu avec "Oui" puis sélectionner les fonctions à utiliser avec 1 *(Fonctions de base)* ou 2 *(Fonctionnalités avec TF-IDF)*.  
 Ensuite si 1 est séléctionné (on doit rechoisir un chiffre), on a :  
 ↪ 1. La liste de tous les présidents  
-↪ 2. Le prénom du président associé à son nom demandé par l'utilisateur
+↪ 2. Le prénom du président associé à son nom demandé par l'utilisateur  
 Si 2 sélectionné (on doit rechoisir un chiffre), on a :  
 ↪ 1. La liste des mots les moins importants  
 ↪ 2. Le(s) mot(s) ayant le score TD-IDF le plus élevé  
