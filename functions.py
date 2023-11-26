@@ -99,7 +99,6 @@ def print_tf_idf(tf_idf):
 
 
 def idf(dir):
-    # Calcul the idf
     nb_files = len(list_of_files(dir, "txt"))
     dict = count_occurrence(list_of_files(dir, "txt"))
     idf_dict = {}
@@ -110,7 +109,6 @@ def idf(dir):
 
 
 def tf_idf(dir):
-    # Calcul the tf-idf
     idf_dict = idf(dir)
     tf_idf_dict = {}
     for file in list_of_files(dir, "txt"):
