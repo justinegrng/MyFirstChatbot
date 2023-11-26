@@ -1,4 +1,5 @@
 import os
+import math
 
 #Fonctions de base
 
@@ -25,7 +26,7 @@ def get_all_president_name(files_names):
             if int(elem[:-1]) != 1:
                 list.remove(elem)
                 continue
-            elem.erase[:-1]
+            elem.pop()
             print(elem)
         except:
             print(elem)
@@ -66,17 +67,24 @@ def associate_president(president):
 
 # Méthode TF-IDF
 def count_occurrence(files_names):
+    dict={}
     for file in files_names:
         f = open("./cleaned/" + file, "r", encoding="utf-8")
         lines = f.readlines()
         for line in lines :
-            for char in line :
-                print ()
+            if line in dict :
+                dict[line]+=1
+            else :
+                dict[line]=1
+    return (dict)
 
+def idf ():
+    math.log()
 
-def tf_idf ():
+#def tf_idf ():
 
 
 
 
 #Fonctionnalités à développer
+
