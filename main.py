@@ -5,10 +5,10 @@ if __name__ == "__main__":
     files_names = list_of_files(directory, "txt")
     clean_speeches(files_names)
     while 1:
-        choice = str(input("Veux tu accéder aux choix du menu ?\n"))
-        if choice == "Oui":
+        choice = str(input("Voulez-vous accéder aux choix du menu ?\n"))
+        if choice.lower() == "oui":
             menu()
         else:
-            print("Vous êtes sorti ! Relancez le programme ;(")
+            print("Vous êtes sorti ! ;( Relancez le programme.")
             exit(0)
 
