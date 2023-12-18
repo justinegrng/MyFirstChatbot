@@ -10,5 +10,5 @@ if __name__ == "__main__":
         if choice.lower() == "oui":
             menu()
         else:
-            print("Vous êtes sorti ! ;( Vous pouvez relancer le programme.")
+            print("Vous êtes sortis ! ;( Vous pouvez relancer le programme.")
             exit(0)
