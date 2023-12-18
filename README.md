@@ -1,5 +1,5 @@
 # MyFirstChatbot 💻
-[Lien vers le dépôt GitHub](https://github.com/justinegrng/MyFirstChatbox.git) 
+[Lien vers le dépôt GitHub](https://github.com/justinegrng/MyFirstChatbot.git)
 
 ## Membres du projet
 > Justine GARNUNG  
