@@ -49,7 +49,7 @@ def menu():
             common_words(tf_idf("cleaned"))
 
     elif user == 3:
-        choice = clean_question(str(input("Vous pouvez poser votre question.")))
+        choice = clean_question(str(input("Vous pouvez poser votre question.\n")))
         matrix = []
         test = most_pertinent_dir(choice, tf_idf("cleaned"), "cleaned")
         print("Résultat : ", test)
