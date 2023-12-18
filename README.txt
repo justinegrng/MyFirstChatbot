@@ -6,7 +6,7 @@ Membres du projet
 > Yéléna SAINTE-ROSE BRUNY  
 
 Instructions d'éxécution du code :
-Exécuter le programme main.py, puis directement accéder au menu avec "Oui" puis sélectionner les fonctions à utiliser avec 1 (Fonctions de base) ou 2 (Fonctionnalités avec TF-IDF).
+Exécuter le programme main.py, puis directement accéder au menu avec "Oui" puis sélectionner les fonctions à utiliser avec 1 (Fonctions de base), 2 (Fonctionnalités avec TF-IDF) ou 3 (Poser une question).
 Ensuite si 1 est séléctionné (on doit rechoisir un chiffre), on a :  
 ↪ 1. La liste de tous les présidents  
 ↪ 2. Le prénom du président associé à son nom demandé par l'utilisateur
