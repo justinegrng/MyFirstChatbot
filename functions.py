@@ -52,6 +52,14 @@ def clean_speeches(files_names):
                 f.write(line)
         f.close()
 
+def clean_question(question):
+    for char in question:
+        if char == '.' or char == ',' or char == '!' or char == '?' or char == ';' or char == ':':
+            question = question.replace(char, "")
+        elif char == '-' or char == "'":
+            question = question.replace(char, " ")
+        question = question.replace(char, char.lower())
+    return question
 
 def associate_president(president):
     if president == "Giscard d'Estaing":
