@@ -2,6 +2,7 @@ import os
 import math
 from functions import *
 
+
 def intersection(question, directory):
     common_words = []
     corpus = ""
@@ -17,7 +18,7 @@ def intersection(question, directory):
             if corpus[i] == question[j] and corpus[i] != '':
                 common_words.append(corpus[i])
     return common_words
-    
+
 def matrix_tf(question, directory):
     matrix = []
     corpus = []
@@ -47,15 +48,18 @@ def matrix_tf(question, directory):
                 if corpus[i][j] == question[k]:
                     count += 1
             matrix[i].append(count)
+
     return matrix
+
+
 
 def get_question_tfidf(question, directory):
     idfs = idf(directory)
     question = clean_question(question)
     question_words = question.split(" ")
-    for elem in question:
+    for elem in question_words:
         if elem == '':
-            question.remove(elem)
+            question_words.remove(elem)
 
     tf_scores = {}
     for word in question_words:
@@ -69,16 +73,17 @@ def get_question_tfidf(question, directory):
 
     return tfidf
 
+
 def scalar_product(v1, v2):
     if len(v1) != len(v2):
         return 0
     else:
         scalar = 0
         for i in range(len(v1)):
-            print(v1[i], v2[i])
             scalar += float(v1[i]) * float(v2[i])
         return scalar
-    
+
+
 def norm(v):
     return math.sqrt(scalar_product(v, v))
 
@@ -87,12 +92,25 @@ def similarity(v1, v2):
         return 0
     return scalar_product(v1, v2) / (norm(v1) * norm(v2))
 
-def most_pertinent_dir(question, matrix, dirs):
-    tfidf = get_question_tfidf(question, dirs)
+def most_pertinent_dir(question, directory):
+    matrix = matrix_tf(question, directory)
+    tfidf = get_question_tfidf(question, directory)  # Correction ici
     similarities = []
-    # Transform the matrix in the same format as the tfidf
-    for i in range(len(matrix)):
-        print(tfidf, matrix[i])
-        similarities.append(similarity(tfidf, matrix[i]))
-    return list_of_files(dirs, "txt")[similarities.index(max(similarities))]
 
+    for i in range(len(matrix)):
+        sim = similarity(tfidf, matrix[i])
+        similarities.append(sim)
+
+    max_similarity_index = similarities.index(max(similarities))
+    most_pertinent_file = os.path.join(directory, os.listdir(directory)[max_similarity_index])
+    most_pertinent_file_speeches = os.path.join("./speeches", most_pertinent_file)
+    return most_pertinent_file_speeches
+
+def extract_answer(question, directory):
+    most_pertinent_file_speeches = most_pertinent_dir(question, directory)
+    most_pertinent_file_cleaned = os.path.basename(most_pertinent_file_speeches)
+
+    cleaned_file_path = os.path.join(directory, most_pertinent_file_cleaned)
+    with open(cleaned_file_path, "r", encoding="utf-8") as file:
+        answer = file.read()
+    return answer

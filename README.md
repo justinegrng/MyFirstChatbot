@@ -27,6 +27,7 @@ Si 2 sélectionné (on doit rechoisir un chiffre), on a :
 - `associate_president`  → *Associer à chaque président un prénom* 
 - `get_all_president_name`  → *Afficher la liste des noms des présidents*
 - `clean_speeches`  → *Convertir les textes des 8 fichiers en minuscules et stocker les contenus dans de nouveaux fichiers dans un nouveau dossier appelé « cleaned » puis parcourir son texte et supprimer tout caractère de ponctuation*
+- `clean_question`  → *Prend en paramètre le texte de la question, et qui retire la ponctuation*
 
 #### Fonctions pour la méthode TF-IDF
 - `count_occurrence`  → *Prend en paramètre une chaine de caractères et retourne un dictionnaire associant à chaque mot le nombre de fois qu’il apparait dans la chaine de caractères*
@@ -43,3 +44,12 @@ Si 2 sélectionné (on doit rechoisir un chiffre), on a :
 - `ecologie_word`  → *Indiquer le premier président à parler du climat et/ou de l’écologie*
 - `common_words`  → *Indiquer hormis les mots dits « non importants », le(s) mot(s) que tous les présidents ont évoqués*
 
+#### Fonctions pour la matrice
+- `intersection`  → *Identifier les termes de la question qui sont également présents dans le corpus de documents*
+- `matrix_tf`  → *Calcul du vecteur TF-IDF pour les termes de la question*
+- `scalar_product`  → *Calcul du produit scalaire*
+- `norm`  → *Calcul de la norme*
+- `similarity`  → *Calcul de la similarité*
+- `most_pertinent_dir`  → *Calcul du document le plus pertinent*
+- `extract_answer`  → *Génération d’une réponse* 
+- `get_question_tfidf`  → *Permet d'obtenir le score TF-IDF de la question avec le même principe que celui pour les textes du corpus* 
