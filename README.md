@@ -1,4 +1,4 @@
-# MyFirstChatbox 💻
+# MyFirstChatbot 💻
 [Lien vers le dépôt GitHub](https://github.com/justinegrng/MyFirstChatbot.git) 
 
 ## Membres du projet
