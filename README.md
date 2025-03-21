@@ -1,11 +1,10 @@
-# MyFirstChatbot 💻
+# My First ChatBot 💻
+![MyFirstChatBot](https://github.com/user-attachments/assets/9cd92d92-c1ae-49e1-8063-fd137ba48fcd)
+
+## Pour commencer ...
 [Lien vers le dépôt GitHub](https://github.com/justinegrng/MyFirstChatbot.git) 
 
-## Membres du projet
-> Justine GARNUNG  
-> Yéléna SAINTE-ROSE BRUNY  
-
-## Instructions d'éxécution du code
+### Instructions d'éxécution du code
 Exécuter le programme ```main.py```, puis accéder au menu avec "Oui" puis sélectionner les fonctions à utiliser avec 1 *(Fonctions de base)*, 2 *(Fonctionnalités avec TF-IDF)* ou 3 *(Poser une question)*.  
 Ensuite si 1 est séléctionné (on doit rechoisir un chiffre), on a :  
 ↪ 1. La liste de tous les présidents  
@@ -52,4 +51,8 @@ Si 2 sélectionné (on doit rechoisir un chiffre), on a :
 - `similarity`  → *Calcul de la similarité*
 - `most_pertinent_dir`  → *Calcul du document le plus pertinent*
 - `extract_answer`  → *Génération d’une réponse* 
-- `get_question_tfidf`  → *Permet d'obtenir le score TF-IDF de la question avec le même principe que celui pour les textes du corpus* 
+- `get_question_tfidf`  → *Permet d'obtenir le score TF-IDF de la question avec le même principe que celui pour les textes du corpus*
+
+## Contributeurs
+> 📚 Justine GARNUNG  
+> 🧠 Yéléna SAINTE-ROSE BRUNY  
